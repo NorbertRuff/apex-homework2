@@ -45,7 +45,7 @@ app.get("/third-power", async function (request, response) {
 });
 
 /**
- *  Sends Fetch req Sequentially
+ *  Calls Fetch function with numbers Sequentially
  * @param numbers array of numbers
  * @returns {Promise<*[]>}
  */
@@ -63,7 +63,7 @@ const fetchSequentially = async (numbers) => {
   return poweredNumbers;
 };
 /**
- *
+ * Calls Fetch function with numbers Parallel
  * @param numbers array of numbers
  * @returns {Promise<String[]>}
  */
