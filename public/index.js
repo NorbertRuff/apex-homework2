@@ -51,7 +51,7 @@ window.onload = () => {
    * @param randomNumbers
    */
   const printRandomNumbers = (resultContainer, randomNumbers) => {
-    resultContainer.innerHTML = "";
+    resultContainer.innerHTML = "Random numbers:";
     for (const randomNumber of randomNumbers) {
       resultContainer.insertAdjacentHTML(
         "beforeend",
@@ -71,15 +71,20 @@ window.onload = () => {
    * @param container
    */
   function printJsonResult(jsonResult, container) {
-    container.innerHTML = "";
+    container.innerHTML = "Results:";
     let resultArray = jsonResult.split(",");
     for (const jsonResultElement of resultArray) {
-      container.insertAdjacentHTML(
-        "beforeend",
-        `
-        <span>${jsonResultElement}, </span>
-      `
-      );
+      if (jsonResultElement === "rejected") {
+        container.insertAdjacentHTML(
+          "beforeend",
+          `<span class="error">${jsonResultElement}, </span>`
+        );
+      } else {
+        container.insertAdjacentHTML(
+          "beforeend",
+          `<span>${jsonResultElement}, </span>`
+        );
+      }
     }
   }
 
