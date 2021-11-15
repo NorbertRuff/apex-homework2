@@ -125,6 +125,7 @@ window.onload = () => {
         sequentialRandomNumberContainer.querySelector(".fire-button");
 
       sequentialFetchButton.addEventListener("click", async () => {
+        sequentialResultContainer.innerHTML = "Loading...";
         let jsonResult = await fetchPowerNumbers(
           SEQUENTIAL_ENDPOINT_URL,
           randomNumbers
@@ -142,6 +143,7 @@ window.onload = () => {
       let parallelFetchButton =
         parallelRandomNumberContainer.querySelector(".fire-button");
       parallelFetchButton.addEventListener("click", async () => {
+        parallelResultContainer.innerHTML = "Loading...";
         let jsonResult = await fetchPowerNumbers(
           PARALLEL_ENDPOINT_URL,
           randomNumbers
