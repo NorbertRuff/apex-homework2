@@ -1,4 +1,4 @@
-const MAX_LENGTH_CHUNKS = 10;
+export const MAX_LENGTH_CHUNKS = 10;
 
 /**
  * Chunks up @param numbers array to max sizes of MAX_LENGTH_CHUNKS
@@ -8,8 +8,7 @@ const MAX_LENGTH_CHUNKS = 10;
 export const chunkUpArray = (numbers) => {
   let numbersChunks = [];
   let removed = [];
-  let iterLength = numbers.length / MAX_LENGTH_CHUNKS;
-  for (let i = 0; i <= iterLength; i++) {
+  while (numbers.length > 0) {
     removed = numbers.splice(0, MAX_LENGTH_CHUNKS);
     numbersChunks.push(removed);
   }
