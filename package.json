@@ -4,8 +4,8 @@
   "type": "module",
   "scripts": {
     "start": "node app.js",
-    "dev": "nodemon app.js",
-    "test": "jest"
+    "dev": "nodemon app.js.js",
+    "test": "node --experimental-vm-modules node_modules/jest/bin/jest.js"
   },
   "dependencies": {
     "express": "^4.17.1",
