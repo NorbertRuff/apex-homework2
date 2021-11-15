@@ -188,7 +188,7 @@ Give a ⭐️ if this project helped you!
 <img src="https://www.codewars.com/users/NorbertRuff/badges/large">
 </div>
 
-<table><tr><td valign="top" width="25%">
+<table><td valign="top" width="25%">
 <h2 align="center"> 💻 </h2><br>
 
 <div align="center">  
@@ -201,7 +201,8 @@ Give a ⭐️ if this project helped you!
 </div>
 
 
-</td><td valign="top" width="25%">
+</td>
+<td valign="top" width="25%">
 
 <h2 align="center"> 🌐 </h2><br>
 
@@ -231,7 +232,7 @@ Give a ⭐️ if this project helped you!
 </div>
 
 </td>
-</td><td valign="top" width="25%">
+<td valign="top" width="25%">
 
 <h2 align="center"> 🎨 </h2><br>
 
@@ -244,7 +245,7 @@ Give a ⭐️ if this project helped you!
  </div>
 
 </td>
-</tr></table>  
+</table>  
 
 <div align="center">
 
