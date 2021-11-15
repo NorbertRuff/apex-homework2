@@ -33,7 +33,7 @@ window.onload = () => {
   };
 
   /**
-   * generates random Integers
+   * generates @param count random Integers
    * @param count
    * @returns {*[]}
    */
@@ -46,7 +46,7 @@ window.onload = () => {
   };
 
   /**
-   * Prints random numbers to correct container
+   * Prints random numbers to @param resultContainer
    * @param resultContainer
    * @param randomNumbers
    */
@@ -66,7 +66,7 @@ window.onload = () => {
   };
 
   /**
-   * Prints fetch results to result container
+   * Prints fetch results to @param jsonResult container
    * @param jsonResult
    * @param container
    */

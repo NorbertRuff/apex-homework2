@@ -11,7 +11,7 @@ const port = appConfig.port || 3000;
 app.use(express.static("public"));
 
 /**
- * second-power route accepts an array returns API call results[]
+ * Second-power route, creates an array of numbers, returns API call results[]
  * @returns {JSON<*[]>}
  */
 app.get("/second-power", async function (request, response) {
@@ -19,14 +19,14 @@ app.get("/second-power", async function (request, response) {
   try {
     numbers = SplitRequestArray(request.query.values);
   } catch (error) {
-    response.json("Wrong parameter syntax");
+    response.json("Parameter syntax error");
   }
   const poweredNumbers = await fetchSequentially(numbers);
   response.json(poweredNumbers.toString());
 });
 
 /**
- * third-power route accepts an array returns API call results[]
+ * Third-power route accepts an array returns API call results[]
  * @returns {JSON<*[]>}
  */
 app.get("/third-power", async function (request, response) {
@@ -34,7 +34,7 @@ app.get("/third-power", async function (request, response) {
   try {
     numbers = SplitRequestArray(request.query.values);
   } catch (error) {
-    response.json("Wrong parameter syntax");
+    response.json("Parameter syntax error");
   }
   let numbersChunks = chunkUpArray(numbers);
   const poweredNumbers = [];
