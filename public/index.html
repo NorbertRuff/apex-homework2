@@ -2,9 +2,45 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <link href="favicon.ico" rel="icon"/>
+    <title>Apex homework</title>
+    <link href="style.css" rel="stylesheet">
+    <script defer src="index.js" type="module"></script>
 </head>
 <body>
-<h1>Hello world</h1>
+
+<div class="main-wrapper">
+    <div class="header">
+        <h2>APEX <span>LAB</span> homework </h2><h5>reloaded</h5>
+    </div>
+    <div class="main-content">
+        <h1 id="main-title">Hello <span>world</span> APEX</h1>
+
+
+        <h2 class="sub-title">Parallel fetch</h2>
+        <label>
+            Please generate <input class="num-input" id="parallel-num-input" min="1" type="number"> random numbers for
+            me to test.
+            <button class="fire-button" id="parallel-fire-button">Fire</button>
+        </label>
+
+        <div id="parallel-random-container"></div>
+
+        <div id="parallel-result-container"></div>
+
+
+        <h2 class="sub-title">Sequential fetch</h2>
+        <label>
+            Please generate <input class="num-input" id="sequential-num-input" min="1" type="number"> random numbers for
+            me to test.
+            <button class="fire-button" id="sequential-fire-button">Fire</button>
+        </label>
+
+        <div id="sequential-random-container"></div>
+
+        <div id="sequential-result-container"></div>
+    </div>
+    <div class="footer">Created by: Norbert Ruff</div>
+</div>
 </body>
 </html>

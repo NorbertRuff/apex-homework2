@@ -1,0 +1,186 @@
+:root {
+    /*<------------------------------Base Color Palette------------------------------------>*/
+    --clr-primary-100: #9dace0;
+    --clr-primary-200: #6d7db4;
+    --clr-primary-300: #4E60EC;
+    --clr-primary-400: #121256;
+    --clr-primary-500: #0F083B;
+    /*<-----------------------------------divider------------------------------->*/
+    --fs-base: 1rem;
+    --fs-double: 2rem;
+    --fs-triple: 2rem;
+    /*<------------------------------Extra Color Palette------------------------------------>*/
+    --clr-tertiary: #f148fb;
+    --clr-tertiary-500: #662269;
+    --clr-accent: #2DE1AF;
+    --clr-light: #fff;
+    --clr-dark: #000;
+    --clr-gradient: linear-gradient(
+            150deg,
+            var(--clr-primary-500) 0%,
+            var(--clr-primary-300) 20%,
+            var(--clr-primary-400) 90%,
+            var(--clr-primary-500) 100%
+    );
+}
+
+/*<------------------------------/Extra Color Palette------------------------------------>*/
+/*<------------------------------Global rules------------------------------------>*/
+*,
+*::before,
+*::after {
+    max-width: 100%;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+/*<------------------------------/Global rules------------------------------------>*/
+/*<------------------------------scrollbar------------------------------------>*/
+html {
+    scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+    background-color: #F5F5F5;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+    background-color: #F5F5F5;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: var(--clr-accent);
+    background-image: -webkit-gradient(linear, 0 0, 0 100%,
+    color-stop(.5, rgba(255, 255, 255, .2)),
+    color-stop(.5, transparent), to(transparent));
+}
+
+/*<------------------------------/scrollbar------------------------------------>*/
+/*<------------------------------body------------------------------------>*/
+body {
+    background: var(--clr-gradient);
+    color: var(--clr-light);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+h1 {
+    font-size: 3rem;
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+/*<------------------------------/body------------------------------------>*/
+/*<------------------------------skeleton------------------------------------>*/
+.main-wrapper {
+    display: grid;
+    width: 100vw;
+    min-height: 100vh;
+    grid-template-columns: 20% 60% 20%;
+    grid-template-rows: 4rem auto 3rem;
+    grid-template-areas:
+    "HeaderArea HeaderArea HeaderArea"
+    "MainContentArea MainContentArea MainContentArea"
+    "FooterArea FooterArea FooterArea";
+}
+
+.header {
+    grid-area: HeaderArea;
+    display: flex;
+    align-items: center;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+    border-bottom: 1px solid var(--clr-accent);
+}
+
+.header > h2 > span {
+    color: var(--clr-accent);
+    font-size: 1.5rem;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    border: 4px solid var(--clr-accent);
+}
+
+.header > h2 {
+    margin-left: 1rem;
+    padding: 10px;
+    color: var(--clr-light);
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.footer {
+    grid-area: FooterArea;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: rgba(0, 0, 0, 0.25) 0 14px 28px, rgba(0, 0, 0, 0.22) 0 10px 10px;
+
+}
+
+.main-content {
+    padding: var(--fs-triple);
+    background-color: rgba(0, 0, 0, 0.2);
+    grid-area: MainContentArea;
+    display: flex;
+    gap: var(--fs-double);
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#parallel-random-container, #sequential-random-container, #parallel-result-container, #sequential-result-container {
+    display: flex;
+    gap: var(--fs-base);
+    justify-content: center;
+}
+
+.error {
+    color: red;
+}
+/*<------------------------------/skeleton------------------------------------>*/
+/*<------------------------------button------------------------------------>*/
+
+.fire-button {
+    box-shadow: inset 0px 1px 0px 0px #54a3f7;
+    background: #007dc1 linear-gradient(to bottom, #007dc1 5%, #0061a7 100%);
+    border-radius: 3px;
+    border: 1px solid #124d77;
+    display: inline-block;
+    cursor: pointer;
+    color: #ffffff;
+    font-size: 13px;
+    padding: 6px 24px;
+    text-decoration: none;
+    text-shadow: 0px 1px 0px #154682;
+}
+
+.fire-button:hover {
+    background: #0061a7 linear-gradient(to bottom, #0061a7 5%, #007dc1 100%);
+}
+
+.fire-button:active {
+    position: relative;
+    top: 1px;
+}
+
+/*<------------------------------/button------------------------------------>*/
+/*<------------------------------input------------------------------------>*/
+label {
+    font-size: 1.4rem;
+}
+
+.num-input {
+    padding: var(--fs-base);
+}
+
+/*<------------------------------/input------------------------------------>*/
+
+#main-title > span {
+    text-decoration: line-through;
+}
