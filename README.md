@@ -1,4 +1,4 @@
-![logo]()
+![screenshot](https://github.com/NorbertRuff/apex-homework2/blob/development/blob/Screenshot1.png?raw=true)
 
 ## <div style="color:#f59800" align="center">---|Welcome to my homework project 👋|---</div>
 
@@ -41,11 +41,6 @@ It has two endpoints
 > To make a project that shows of my skills and passion for JS, front-end development, learn the async await.
 >
 
-## 🚦Demo
-
-<div align="center">
-
-![screenshot]()
 
 </div>
 
@@ -54,9 +49,8 @@ It has two endpoints
 <div align="center">
 
 
-![screenshot]()
-
-![screenshot]()
+![screenshot](https://github.com/NorbertRuff/apex-homework2/blob/development/blob/Screenshot3.png?raw=true)
+![screenshot](https://github.com/NorbertRuff/apex-homework2/blob/development/blob/Screenshot2.png?raw=true)
 
 
 
